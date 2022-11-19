@@ -1,0 +1,1 @@
+Just replace prog.DLL with any EXE with the DLL file extension.
