@@ -1,0 +1,1 @@
+Run start.bat and after the setup installs the necessary python modules, listen to the instructions to get your resulted file.
