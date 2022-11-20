@@ -10,28 +10,12 @@ def StartLogo():
  | |____ >  <| |_  \__ \ |_) | (_) | (_) | ||  __/ |   
  |______/_/\_\\\\__| |___/ .__/ \___/ \___/|_| \___|_|   
                        | |                             
-                       |_|                             """)))
-    print(f"Please insert the {pystyle.Colorate.Horizontal(pystyle.Colors.blue_to_purple, 'full path')} to your file: ")
-    inFl = input()
-    CheckFile(inFl)
-    return
+                       |_|                             """)));print(f"Please insert the {pystyle.Colorate.Horizontal(pystyle.Colors.blue_to_purple, 'full path')} to your file: ");inFl = input();CheckFile(inFl);return
 def CheckFile(inFl):
     if os.path.isfile(inFl):
-        print(f"Please type your desired {pystyle.Colorate.Horizontal(pystyle.Colors.blue_to_purple, 'file extension')}: ")
-        ext = input()
-        if (ext.replace(" ", "") != ""):
-            change(inFl, "pif", ext)
-            print(pystyle.Colorate.Color(pystyle.Colors.green, "Success. Press any key to continue."))
-            input()
-            return
-        else:
-            print(pystyle.Colorate.Color(pystyle.Colors.red, "Please enter a valid extension."))
-            print("")
-            CheckFile(inFl)
-            return
+        print(f"Please type your desired {pystyle.Colorate.Horizontal(pystyle.Colors.blue_to_purple, 'file extension')}: ");ext = input()
+        if (ext.replace(" ", "") != ""):change(inFl, "pif", ext);print(pystyle.Colorate.Color(pystyle.Colors.green, "Success. Press any key to continue."));input();return
+        else:print(pystyle.Colorate.Color(pystyle.Colors.red, "Please enter a valid extension."));print("");CheckFile(inFl);return
     else:
-        os.system("cls" if os.name == 'nt' else "clear")
-        print(pystyle.Colorate.Color(pystyle.Colors.red, "Please enter a valid file."))
-        StartLogo()
-        return
+        os.system("cls" if os.name == 'nt' else "clear");print(pystyle.Colorate.Color(pystyle.Colors.red, "Please enter a valid file."));StartLogo();return
 StartLogo()
